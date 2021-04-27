@@ -9,4 +9,4 @@ Alternatively, you can download the haze removed dataset from:
 and set DATASET_PATH to "dataset-haze-removed/" in the notebook.
 
 
-**NOTE:** Google Drive does not allow you (theoretically it does, but unnecessarily difficult!) to directly download a file, which means we cannot download a dataset directly to a server. In this case, download the dataset on your local machine and use scp to transfer. For example, ```scp dataset.tar.gz username@garlick.cs.bath.ac.uk:~/CM50265-Group-Project/``` and decompress it there using command such as ```tar -xzvf dataset.tar.gz```
+**NOTE:** Google Drive does not allow you (theoretically it does, but unnecessarily difficult!) to directly download a file, which means we cannot download a dataset directly to a server. In this case, download the dataset on your local machine and use scp to transfer. For example, ```scp dataset.tar.gz username@garlick.cs.bath.ac.uk:~/CM50265-Group-Project/``` will transfer a copy of ```dataset.tar.gz``` to ```~/CM50265-Group-Project/``` folder in ```garlick```. Decompress the tar.gz file there using command such as ```tar -xzvf dataset.tar.gz```.
