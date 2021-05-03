@@ -12,29 +12,29 @@ from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D, AveragePool
 from keras.models import Sequential
 #from keras.optimizers import Adam
 
-def create_model():
+def create_model(dropout):
     model = Sequential([
         Conv2D(32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(128, 128, 3)),
         Conv2D(32, kernel_size=(3, 3), activation='relu'),
         MaxPool2D(pool_size=(2, 2)),
-	Dropout(0.1),
+	Dropout(dropout),
 
         Conv2D(64, kernel_size=(3, 3), activation='relu', padding='same'),
         Conv2D(64, kernel_size=(3, 3), activation='relu'),
         MaxPool2D(pool_size=(2, 2)),
-	Dropout(0.1),
+	Dropout(dropout),
 
         Conv2D(128, kernel_size=(3, 3), activation='relu', padding='same'),
         Conv2D(128, kernel_size=(3, 3), activation='relu'),
         Conv2D(128, kernel_size=(3, 3), activation='relu'),
         MaxPool2D(pool_size=(2, 2)),
-	Dropout(0.1),
+	Dropout(dropout),
 
         Conv2D(256, kernel_size=(3, 3), activation='relu', padding='same'),
         Conv2D(256, kernel_size=(3, 3), activation='relu'),
         Conv2D(256, kernel_size=(3, 3), activation='relu'),
         MaxPool2D(pool_size=(2, 2)),
-	Dropout(0.1),
+	Dropout(dropout),
 
         Flatten(),
         Dense(17, activation='sigmoid') 
