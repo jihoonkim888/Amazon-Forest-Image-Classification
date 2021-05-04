@@ -1,18 +1,12 @@
-import tensorflow as tf
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback, ReduceLROnPlateau
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.backend import clear_session
-
 import keras
 from keras import backend as K
-#from keras.regularizers import l2
-#from keras.callbacks import ModelCheckpoint
-from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D, AveragePooling2D, Input
-from keras.layers.normalization import BatchNormalization
+from keras.layers import Dense, Flatten, InputLayer
 from keras.models import Sequential, Model
-#from keras.optimizers import Adam
-from keras.applications import MobileNet, VGG16
-#from tensorflow.keras.applications.vgg16 import VGG16
+from keras.applications import VGG16
+
+
+INPUT_SHAPE = (128, 128, 3)
+ 
 
 def create_model():
     model = Sequential()
