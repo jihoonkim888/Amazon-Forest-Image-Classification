@@ -11,7 +11,7 @@ from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D, AveragePool
 from keras.layers.normalization import BatchNormalization
 from keras.models import Sequential, Model
 #from keras.optimizers import Adam
-from tf.keras.applications import MobileNet
+from tensorflow.keras.applications import MobileNet
 
 # Define MobileNet model for Haze removal
 def create_model():

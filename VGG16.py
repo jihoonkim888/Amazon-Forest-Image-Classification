@@ -1,8 +1,9 @@
 import keras
+import tensorflow as tf
 from keras import backend as K
 from keras.layers import Dense, Flatten, InputLayer
 from keras.models import Sequential, Model
-from tf.keras.applications import VGG16
+from tensorflow.keras.applications import VGG16
 
 
 INPUT_SHAPE = (128, 128, 3)
