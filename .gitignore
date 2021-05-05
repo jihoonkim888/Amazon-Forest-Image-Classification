@@ -2,6 +2,7 @@
 *dataset*/
 ._dataset
 .*idea*/
+hyper_set*/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
